@@ -87,7 +87,17 @@ app.post("/generate", async (req, res) => {
             - Do not use markdown.
             - Do not use **bold**, *italic*, bullet points or numbering.
             - Return only the cover letter.
+            
+            Additional Instructions:
 
+                • Do not include placeholders like "[Current Date]".
+                • Use today's date automatically or omit the date.
+                • Avoid repetitive wording.
+                • Make the writing sound natural and human.
+                • Avoid overly formal or robotic language.
+                • Keep the cover letter between 300–400 words.
+                • Do not use markdown symbols like ** or bullet points.
+                • Return only plain text.
             End exactly like this:
 
             Sincerely,
