@@ -36,3 +36,14 @@
 
 ## github repository link
 - https://github.com/prachii00705-cell/sprint-4-ai-cover-letter-generator
+
+## screenshots
+
+### Desktop View
+![Desktop View](assets/desktop.png)
+
+### Mobile View
+![Mobile View](assets/mobile.png)
+
+### Lighthouse Report
+![Lighthouse Report](assets/lighthouse.png)

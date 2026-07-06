@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Cover Letter Generator</title>
+    <meta name="description" content="Generate ATS-friendly AI cover letters instantly using Google's Gemini AI.">
+    <meta name="keywords" content="AI Cover Letter Generator, Gemini AI, Cover Letter, Resume, ATS">
+    <meta name="author" content="Prachi Waldia">
+    <title>AI Cover Letter Generator | Gemini AI</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <main>
 
     <div class="container">
 
@@ -21,7 +26,7 @@
         <form id="coverLetterForm">
 
             <div class="input-group">
-                <label>Candidate Name</label>
+                <label for="candidateName">Candidate Name</label>
                 <input
                     type="text"
                     id="candidateName"
@@ -30,7 +35,7 @@
             </div>
 
             <div class="input-group">
-                <label>Job Role</label>
+                <label for="jobRole">Job Role</label>
                 <input
                     type="text"
                     id="jobRole"
@@ -39,7 +44,7 @@
             </div>
 
             <div class="input-group">
-                <label>Target Company</label>
+                <label for="company">Target Company</label>
                 <input
                     type="text"
                     id="company"
@@ -48,7 +53,7 @@
             </div>
 
             <div class="input-group">
-                <label>Key Skills</label>
+                <label for="skills">Key Skills</label>
                 <input
                     type="text"
                     id="skills"
@@ -57,7 +62,7 @@
             </div>
 
             <div class="input-group">
-                <label>Job Description</label>
+                <label for="jobDescription">Job Description</label>
 
                 <textarea
                     id="jobDescription"
@@ -68,8 +73,7 @@
             </div>
 
             <div class="input-group">
-                <label>Upload Resume (PDF)</label>
-
+                <label for="resume">Upload Resume (PDF)</label>
                 <input
                     type="file"
                     id="resume"
@@ -125,6 +129,7 @@
             🗑 Clear Form
         </button>
 
+
         <footer>
 
             <p>
@@ -136,6 +141,8 @@
         </footer>
 
     </div>
+
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
