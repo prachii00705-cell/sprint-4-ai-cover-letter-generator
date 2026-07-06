@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cover Letter Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🤖 AI Cover Letter Generator</h1>
+            <p>Create professional ATS-friendly cover letters using Gemini AI.</p>
+        </div>
+
+        <form id="coverLetterForm">
+
+            <div class="input-group">
+                <label>Candidate Name</label>
+                <input
+                    type="text"
+                    id="candidateName"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Job Role</label>
+                <input
+                    type="text"
+                    id="jobRole"
+                    placeholder="Frontend Developer"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Target Company</label>
+                <input
+                    type="text"
+                    id="company"
+                    placeholder="Google"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Key Skills</label>
+                <input
+                    type="text"
+                    id="skills"
+                    placeholder="HTML, CSS, JavaScript, React"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Job Description</label>
+
+                <textarea
+                    id="jobDescription"
+                    rows="6"
+                    placeholder="Paste the Job Description..."
+                    required></textarea>
+
+            </div>
+
+            <div class="input-group">
+                <label>Upload Resume (PDF)</label>
+
+                <input
+                    type="file"
+                    id="resume"
+                    accept=".pdf">
+            </div>
+
+            <button
+                type="submit"
+                id="generateBtn">
+                ✨ Generate Cover Letter
+            </button>
+
+        </form>
+
+        <!-- Loading -->
+
+        <div id="loading" class="hidden">
+
+            <div class="spinner"></div>
+
+            <p>Generating your Cover Letter...</p>
+
+        </div>
+
+        <!-- Output -->
+
+        <div id="outputSection" class="hidden">
+
+            <div class="output-header">
+
+                <h2>Generated Cover Letter</h2>
+                <div class="output-buttons">
+                    <button id="copyBtn">
+                        📋 Copy
+                    </button>
+
+                    <button id="downloadBtn">
+                        📄 Download PDF
+                    </button>
+                </div>
+
+            </div>
+
+            <textarea
+                id="coverLetterOutput"
+                readonly></textarea>
+
+        </div>
+
+        <button
+            type="button"
+            id="clearBtn">
+            🗑 Clear Form
+        </button>
+
+        <footer>
+
+            <p>
+                © 2026 AI Cover Letter Generator |
+                Sprint 4 |
+                HTML • CSS • JavaScript • Express • Gemini AI
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
