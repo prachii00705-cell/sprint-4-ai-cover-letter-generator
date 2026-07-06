@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/generate",
+            "https://cover-letter-generator-nbzs.onrender.com/generate",
             {
                 method: "POST",
                 headers: {
