@@ -27,3 +27,12 @@
 
 ### AI
 - Google Gemini 2.5 Flash
+
+## live demo link
+- https://ai-cover-generator.netlify.app/
+
+## backend API link
+- https://cover-letter-generator-nbzs.onrender.com
+
+## github repository link
+- https://github.com/prachii00705-cell/sprint-4-ai-cover-letter-generator
